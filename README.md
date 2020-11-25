@@ -11,3 +11,5 @@ Double click the Following keys to click:
 1 - Yes
 2 - No
 3 - Exit the script
+
+# This is yank as fuck 
