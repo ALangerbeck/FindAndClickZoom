@@ -1,12 +1,11 @@
 import pyautogui
 import time
 from pynput import keyboard
-import threading
 
 
 def runyes():  
-    imageBoxGreen = pyautogui.locateOnScreen('FindAndClickZoom\GreenCheck.PNG')
-    imageBoxGreen2 = pyautogui.locateOnScreen('FindAndClickZoom\GreenCheck2.PNG')
+    imageBoxGreen = pyautogui.locateOnScreen('FindAndClickZoom\images\GreenCheck.PNG')
+    imageBoxGreen2 = pyautogui.locateOnScreen('FindAndClickZoom\images\GreenCheck2.PNG')
     if( imageBoxGreen != None):
         pyautogui.click(imageBoxGreen.left + imageBoxGreen.width/2,imageBoxGreen.top + imageBoxGreen.height/2)
     elif( imageBoxGreen2 != None):
@@ -15,8 +14,8 @@ def runyes():
         print('There is no yes key on current monitor')
 
 def runno():
-    imageBoxRed = pyautogui.locateOnScreen('FindAndClickZoom\RedCheck.PNG')
-    imageBoxRed2 = pyautogui.locateOnScreen('FindAndClickZoom\RedCheck2.PNG')
+    imageBoxRed = pyautogui.locateOnScreen('FindAndClickZoom\images\RedCheck.PNG')
+    imageBoxRed2 = pyautogui.locateOnScreen('FindAndClickZoom\images\RedCheck2.PNG')
     if( imageBoxRed != None):
         pyautogui.click(imageBoxRed.left + imageBoxRed.width/2,imageBoxRed.top + imageBoxRed.height/2)
     elif(imageBoxRed2 != None):
